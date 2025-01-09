@@ -9,7 +9,7 @@
         Height="450" 
         Width="800">
 
-    <DataGrid>
+    <DataGrid Name="dg" CellEditEnding="dg_CellEditEnding">
         
     </DataGrid>
 
