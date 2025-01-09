@@ -7,11 +7,26 @@
         mc:Ignorable="d"
         Title="Mon application" 
         Height="600" 
-        Width="1000"
-        ResizeMode="NoResize"
-        >
+        Width="1000" >
     
     <Grid>
+        <!--Définition de la grille principale-->
+        <!--Lignes-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <!--Colonnes-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*" />
+            <ColumnDefinition Width="75*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Ici vient le menu" Grid.Row="0" Grid.Column="0" />
+        <TextBlock Text="Contenu principal" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Text="Footer" Grid.Row="2" Grid.Column="0" />
 
     </Grid>
+ 
 </Window>
